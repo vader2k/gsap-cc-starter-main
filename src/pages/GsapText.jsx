@@ -10,6 +10,17 @@ const GsapText = () => {
       duration: 1,
       ease: "power1.inOut"
     })
+
+    gsap.fromTo('.para', {
+      opacity: 0,
+      y: 20,
+      ease: "power1.inOut"
+    }, {
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      delay: 1
+    })
   },[])
 
   return (
